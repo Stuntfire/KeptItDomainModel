@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="339f5559-0c9e-4cb3-9345-9fda6451daf9" name="KeptItDomainModel+" linkedPackageId="8f96367c-afc4-429a-9217-9bbe6092ed17" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="727ccd49-21b5-4f04-b1a9-4fe8a655d6ac">
+      <profileInstance Id="10148196-754f-48bc-ac07-6beb592f69e7" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="3b8a8359-e974-49e4-ba5b-11ed09bbe637">
+      <profileInstance Id="a3a2ada7-6640-4e9b-95ab-7b74eeaf5d29" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="105de529-c83f-4611-92f4-97e793c896f0" name="Task1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="787c1fbe-cb28-438f-b75c-b10d61cac5be" />
+        <targetEnds>
+          <association Id="c5bf7446-cb07-4f3a-b2f7-7fb29edbddc1" isDerived="false" sourceEndRoleName="Task" targetEndRoleName="Hour" isLeaf="false" isAbstract="false">
+            <classMoniker Id="aa6a321c-6aa9-40cd-8143-9c5398c17c2f" LastKnownName="Hour1" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="873178f9-85e9-4a01-9759-167a6a8091d8" name="Task" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b0fe3d98-80e9-4084-b3a7-fe16d7a1b5c6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5cebefa9-c3fa-4610-9fab-1844331a96a2" name="Hour" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="1fa4a713-2818-4d13-bff4-e6b2d4aebce0" name="Lower" value="1">
+                      <elementDefinition Id="c8fac89c-03ab-43db-a09b-bba7fbb73f11" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="ab483030-1f18-4708-8727-0bde94bd466f" name="Upper" value=".*">
+                      <elementDefinition Id="ed73292f-df57-43d3-89b7-082b281ce224" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="64bf4598-f959-4368-b522-23590c328358" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="423a7960-03d1-4741-9a3a-6f1ae2e1b8a6" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="91b7f053-02bc-4844-961f-9db6921f361c" name="Course" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eb93e1bd-4433-4ed2-bfab-1fe623ea4f9c" />
+          </property>
+          <property Id="9ddbec13-c560-4a18-b195-ba29c8a22fce" name="Task_id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a7f80293-5b63-4fb4-82aa-07056c76d4b1" />
+          </property>
+          <property Id="c99b2f6a-2c79-47ab-8692-916ba2ab22a0" name="Task_description" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7680ebe2-8462-4588-a383-a725c236172f" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="86b8da64-2d84-45dd-93c8-4fdbf7806000" name="Person1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f94d4d5a-e745-451c-a491-548169915899" />
+        <ownedAttributesInternal>
+          <property Id="5364b10e-25a6-4576-b937-afde2ebc7d66" name="Person_id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c0e026a5-2494-4edc-8684-d7cae839f4ad" />
+          </property>
+          <property Id="ca9b8f88-b066-4b37-848a-654201902e22" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f8a49aca-a2b5-46db-802f-c347ff7b5b11" />
+          </property>
+          <property Id="208e3310-c78d-4fd0-96dc-d647a47d99cc" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fc222430-d55d-41fe-9990-33a7993a49c4" />
+          </property>
+          <property Id="83854a6a-1d92-4fb7-909c-c36e48ece962" name="Password" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5db523b1-ba87-400b-b78a-ed74b1d1843d" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="aa6a321c-6aa9-40cd-8143-9c5398c17c2f" name="Hour1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f5f32058-9cdb-4202-b04a-68ff1752cbec" />
+        <targetEnds>
+          <association Id="7d78d7dd-e6da-4330-8d87-6b970224ed12" isDerived="false" sourceEndRoleName="Hour" targetEndRoleName="Person" isLeaf="false" isAbstract="false">
+            <classMoniker Id="86b8da64-2d84-45dd-93c8-4fdbf7806000" LastKnownName="Person1" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2880e243-fe03-43e5-8fe6-fae7f8ecc7ab" name="Hour" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="97f29262-5af6-4609-a35a-b4a40bb95fae" name="Lower" value="1">
+                      <elementDefinition Id="d165dd9e-aed3-40ea-896f-232e5c90258f" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="ca32e364-f8df-445a-8330-da5b8f568d6a" name="Upper" value=".*">
+                      <elementDefinition Id="4abecc2e-5bb3-44d3-b5f3-e0d8befd2ee2" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="3b383747-4c48-4530-8744-9e6ec61c77e7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="94806d9e-c2c5-4b8d-a7fb-95967487f8a1" name="Person" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="50a32933-ac23-4b80-afe2-b85fed3239d2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="89d1d3d8-a1b4-4ddc-89f9-ffc06e5a5829" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="0d9f00ee-8b0d-4223-86cf-906afb5d9d66" name="Person" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3c07f0ab-c798-416a-b158-3a47f6209a33" />
+          </property>
+          <property Id="580f76af-dd0a-4ff2-bca3-c4689607a57c" name="Hour_id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2ba14530-86e0-4f42-8e52-0e794a5a5a76" />
+          </property>
+          <property Id="e33629d2-1b0f-4aee-bab4-ffba1c247cb4" name="Date_from" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cd2807b2-4fb8-4d35-bf56-eb4f716cf093" />
+          </property>
+          <property Id="47b8dd77-438d-4836-a1c9-da674afdbf4e" name="Date_to" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ea257b93-ea78-4b96-b15b-02cdd688c9d5" />
+          </property>
+          <property Id="c2e641e1-0c23-4a75-906b-813e7dfa4126" name="Hour" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7add31e1-6d0b-4964-9d60-bd33e607351d" />
+          </property>
+          <property Id="cfd3a7a8-3516-4f1d-b39e-309d8d1ec182" name="Task_id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0b656271-3293-4bc9-89ba-bcd5cd4213f1" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="30bc79c0-612c-4019-b095-692c77e6c84e" name="Course1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="32551547-20e4-46b4-b0fb-b34e615e582c" />
+        <targetEnds>
+          <association Id="c0aefa39-baba-4208-8a35-e159b658acce" isDerived="false" sourceEndRoleName="Course" targetEndRoleName="Task" isLeaf="false" isAbstract="false">
+            <classMoniker Id="105de529-c83f-4611-92f4-97e793c896f0" LastKnownName="Task1" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f28a0022-f2e9-4a29-aff7-b56defc3b727" name="Course" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="27b0c087-b5a7-415f-9a0b-c111b88eda70" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="379aab5c-fafd-4905-9eb8-0aae3605ebc9" name="Task" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0958d41f-fec0-4c74-b0d7-8551fa756ec7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6ec6dd28-b6ba-4eef-a710-209bf883f298" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="a1b90f9b-8b19-42aa-9b1d-c545eee59860" name="Course_id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="59ab3a56-a4f1-42c8-8de9-91e9cb0f4bac" />
+          </property>
+          <property Id="259d39f2-a89c-4dcb-8bae-4586414693a8" name="Coordinates" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="24873a2a-b5ab-4813-b325-0582068f94dc" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="8f96367c-afc4-429a-9217-9bbe6092ed17" name="KeptItDomainModel">
+    <elementDefinition Id="6dffcb30-a11a-438e-ac1f-4f9c88ed7a65" />
+  </package>
+</logicalClassDesignerModel>
