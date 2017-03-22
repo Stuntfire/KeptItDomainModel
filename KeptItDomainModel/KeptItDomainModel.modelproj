@@ -30,12 +30,12 @@
       <SubType>Content</SubType>
       <DependentUpon>KeptItDomainModel+.classdiagram</DependentUpon>
     </Content>
-    <Content Include="KeptItDomainModelDrawing.classdiagram">
+    <Content Include="KeptItDomainModel.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="KeptItDomainModelDrawing.classdiagram.layout">
+    <Content Include="KeptItDomainModel.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>KeptItDomainModelDrawing.classdiagram</DependentUpon>
+      <DependentUpon>KeptItDomainModel.classdiagram</DependentUpon>
     </Content>
     <Content Include="ModelDefinition\KeptItDomainModel.uml">
       <SubType>Content</SubType>
