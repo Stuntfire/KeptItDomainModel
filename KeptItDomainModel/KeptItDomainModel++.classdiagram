@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="1c877fb3-3a92-4866-bb19-0d3129ab1eca" name="UMLClassDiagram1" linkedPackageId="178e1682-0674-47a2-a9cd-d47119f9d482" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="b4e88773-d789-4ef0-a7ee-d9c8fae9b631">
+      <profileInstance Id="9e8a48c6-f1a3-4581-ad13-1a53562084b6" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="889d079b-96da-4ee3-9c08-6f2dc4484547">
+      <profileInstance Id="88fc4746-f3ab-4a57-88af-7d4c4bb16cce" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3710369a-4017-400c-916f-701ea713b402" name="Task" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1008a296-36d1-4ac8-b8ab-77d8ec99b027" />
+        <targetEnds>
+          <association Id="6be51d41-b943-43e2-993f-eb445fb4949e" isDerived="false" sourceEndRoleName="Task" targetEndRoleName="Time" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c4669de7-32fd-4373-9f2f-0cf84ba18961" LastKnownName="Time" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7e9fd18e-ec55-40ee-8346-9c655201bf25" name="Task" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dec8dd69-f44a-4aca-9719-9fad77ed88c9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="01173ebc-4cce-491f-ac68-8ad34748b8e3" name="Time" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="204f7ea0-daec-41f0-aa09-33da63c37b23" name="Lower" value="1">
+                      <elementDefinition Id="9ac52e14-7207-438c-a077-a814ccbbb650" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="248a10bf-8cf2-4db1-8b88-6ce5eb33d5bd" name="Upper" value=".*">
+                      <elementDefinition Id="566b544e-6333-4bc3-aa9e-30f79bf17990" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="86eda7e9-1e49-4bfb-9830-cd9670b3025f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d4fb7271-f85b-4f6e-8802-eabff2bff55d" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="20585a4e-6e12-4b60-b392-20cd74b3be15" name="id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e7959bd3-7508-4a4b-9300-69b71f75d3bc" />
+          </property>
+          <property Id="94d64208-6263-41f2-8ff1-f92262f69a74" name="note" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="75144273-1c23-4b14-92a3-b1f288fe32dc" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4b05ed6c-ee62-4392-b170-96d6a0a1747f" name="Greenkeeper" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8dbf87d0-8d0a-45fe-9475-0bd102ddca34" />
+        <targetEnds>
+          <association Id="4df38c88-2564-4d45-a0bc-c02d18d5da11" isDerived="false" sourceEndRoleName="Greenkeeper" targetEndRoleName="Area" isLeaf="false" isAbstract="false">
+            <classMoniker Id="33e0d16e-32ab-4f0b-97a4-896c6bb3949e" LastKnownName="Area" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2ede59f9-afe4-4d47-b2a5-c75d87ffd4a9" name="Greenkeeper" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="db048bfb-d831-431d-a0b6-96141df2521a" name="Lower" value="1">
+                      <elementDefinition Id="52270a0d-6c4f-42ad-a8d5-36cdd691667d" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="1715ec20-cbc6-42aa-bd4b-375ef34e5d19" name="Upper" value=".*">
+                      <elementDefinition Id="8698bb36-e347-4a2e-8d46-d4cbbd8f8184" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="52304b9f-bdf9-4031-aec1-3b1d1586be33" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4ab57b9b-2e70-4345-860f-493692121a23" name="Area" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="92e5fdf1-906d-4534-bf9b-c3a80853ee88" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="34f0e8ad-185a-47bc-b8d9-ef36fabb66c5" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="c0f1e304-33fa-4456-bf4a-fe7cbc3dcd71" name="id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9213dc54-8ccb-4826-974d-fcedaddffaae" />
+          </property>
+          <property Id="e3001c97-ea71-4595-bc69-69c3dfed8193" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9681ba9e-84a6-4c43-b69d-7ac1c5201da7" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c4669de7-32fd-4373-9f2f-0cf84ba18961" name="Time" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2388952c-44f5-44a7-9017-dc70394d62da" />
+        <ownedAttributesInternal>
+          <property Id="a64bd808-c39b-44fb-befa-b0e7ebb40df7" name="Date" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1f0c7764-641d-4570-8d98-fa71822134bc" />
+          </property>
+          <property Id="df9a4a6f-564d-4123-b4c2-4809413a608c" name="Hour" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bec556cf-a5a1-47c9-b676-f58dc6e4753f" />
+          </property>
+          <property Id="05f57b23-ca70-4a50-8a33-1f7f1c7e3ee9" name="Minutes" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="85f14d8b-96db-4c79-9a46-dfcdbeca62d5" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="33e0d16e-32ab-4f0b-97a4-896c6bb3949e" name="Area" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="147d5bd8-2308-47e9-a6ce-9f8cfb02e9c1" />
+        <targetEnds>
+          <association Id="2ec5c7d0-f97d-4217-b090-7d405b585ba2" isDerived="false" sourceEndRoleName="Area" targetEndRoleName="SubArea" isLeaf="false" isAbstract="false">
+            <classMoniker Id="04de86d5-e0ce-4d1b-8b2e-84f73f0c3d77" LastKnownName="SubArea" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="57c39b0c-225b-4c8d-8866-a10a8f05640d" name="Area" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="6cd64ff0-6118-4e09-889a-78c937dc6dd5" name="Lower" value="1">
+                      <elementDefinition Id="cf59d1f9-79d0-4502-8683-25e1e522d18a" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="66695667-d3c5-4bb8-98c8-f16933b8dbef" name="Upper" value=".*">
+                      <elementDefinition Id="72f95467-636f-4cd3-8aaa-5159c3526253" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="ee69ab67-107e-44a3-8fc1-9172c0004eeb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6d98f249-fe99-4f84-8010-101d70361f57" name="SubArea" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3ee7ae88-d851-466f-888e-48d8e28e7176" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4ce21e0d-051d-449e-a6b2-4e62a9ac343f" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="e2dcf3f5-58ba-483d-8fe4-3369eaa066c0" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7bbe6e62-a189-48c3-a0e0-d6e77da050bd" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="04de86d5-e0ce-4d1b-8b2e-84f73f0c3d77" name="SubArea" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7340c4c9-46c9-4b8c-88de-ebee32cce29c" />
+        <targetEnds>
+          <association Id="bfa0f8a1-0113-4bf4-99bc-2e1e19e1dab0" isDerived="false" sourceEndRoleName="SubArea" targetEndRoleName="Time" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c4669de7-32fd-4373-9f2f-0cf84ba18961" LastKnownName="Time" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="93f3a0fa-a8be-40b4-b8eb-9683f681fdef" name="SubArea" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1a3e0331-0c25-4a4e-9c7b-91acf8f80d6a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d8d91c01-35f8-4604-af79-e3fbbbee6ec8" name="Time" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="de5cdc83-77d1-47e5-ad95-58a53164b705" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="53d8086d-557f-4804-afd0-4812fa997bc3" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="6d839ea7-1ac7-491a-a9a3-656e54550ae9" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="10d142db-132c-4c7e-b546-cc0fd1b54036" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="178e1682-0674-47a2-a9cd-d47119f9d482" name="KeptItDomainModel">
+    <elementDefinition Id="6dffcb30-a11a-438e-ac1f-4f9c88ed7a65" />
+  </package>
+</logicalClassDesignerModel>
