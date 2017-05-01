@@ -745,7 +745,7 @@
     <packageHasNamedElement>
       <class
         Id="1008a296-36d1-4ac8-b8ab-77d8ec99b027"
-        name="Task"
+        name="GreenTask"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -753,7 +753,7 @@
           <association
             Id="d4fb7271-f85b-4f6e-8802-eabff2bff55d"
             isDerived="false"
-            sourceEndRoleName="Task"
+            sourceEndRoleName="GreenTask"
             targetEndRoleName="Time"
             isLeaf="false"
             isAbstract="false">
@@ -765,7 +765,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="dec8dd69-f44a-4aca-9719-9fad77ed88c9"
-                  name="Task"
+                  name="GreenTask"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"

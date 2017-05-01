@@ -1,29 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="1c877fb3-3a92-4866-bb19-0d3129ab1eca" name="UMLClassDiagram1" linkedPackageId="178e1682-0674-47a2-a9cd-d47119f9d482" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="b4e88773-d789-4ef0-a7ee-d9c8fae9b631">
-      <profileInstance Id="9e8a48c6-f1a3-4581-ad13-1a53562084b6" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="889d079b-96da-4ee3-9c08-6f2dc4484547">
-      <profileInstance Id="88fc4746-f3ab-4a57-88af-7d4c4bb16cce" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
-      <class Id="3710369a-4017-400c-916f-701ea713b402" name="Task" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="3710369a-4017-400c-916f-701ea713b402" name="GreenTask" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="1008a296-36d1-4ac8-b8ab-77d8ec99b027" />
         <targetEnds>
-          <association Id="6be51d41-b943-43e2-993f-eb445fb4949e" isDerived="false" sourceEndRoleName="Task" targetEndRoleName="Time" isLeaf="false" isAbstract="false">
+          <association Id="6be51d41-b943-43e2-993f-eb445fb4949e" isDerived="false" sourceEndRoleName="GreenTask" targetEndRoleName="Time" isLeaf="false" isAbstract="false">
             <classMoniker Id="c4669de7-32fd-4373-9f2f-0cf84ba18961" LastKnownName="Time" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="7e9fd18e-ec55-40ee-8346-9c655201bf25" name="Task" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="7e9fd18e-ec55-40ee-8346-9c655201bf25" name="GreenTask" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="dec8dd69-f44a-4aca-9719-9fad77ed88c9" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -182,5 +168,19 @@
   </packagedElements>
   <package Id="178e1682-0674-47a2-a9cd-d47119f9d482" name="KeptItDomainModel">
     <elementDefinition Id="6dffcb30-a11a-438e-ac1f-4f9c88ed7a65" />
+    <profileInstances>
+      <packageHasProfileInstances Id="b4e88773-d789-4ef0-a7ee-d9c8fae9b631">
+        <profileInstance Id="9e8a48c6-f1a3-4581-ad13-1a53562084b6" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="889d079b-96da-4ee3-9c08-6f2dc4484547">
+        <profileInstance Id="88fc4746-f3ab-4a57-88af-7d4c4bb16cce" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>
