@@ -22,12 +22,12 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
-    <Content Include="KeptItDomainModel+++.classdiagram">
+    <Content Include="KeptItDomainModel-Greenkeeper.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="KeptItDomainModel+++.classdiagram.layout">
+    <Content Include="KeptItDomainModel-Greenkeeper.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>KeptItDomainModel+++.classdiagram</DependentUpon>
+      <DependentUpon>KeptItDomainModel-Greenkeeper.classdiagram</DependentUpon>
     </Content>
     <Content Include="KeptItDomainModel++.classdiagram">
       <SubType>Content</SubType>
