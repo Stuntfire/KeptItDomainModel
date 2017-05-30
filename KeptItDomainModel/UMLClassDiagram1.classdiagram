@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="d784bd3b-fb7a-4efd-9513-573322fb6a7c" name="UMLClassDiagram1" linkedPackageId="de5d190e-ea7e-4152-8b3a-2946587293a9" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5b0f38be-b179-41c2-a135-dc20d44bf837" name="Opgave" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="02f4f5d5-1c76-4832-b3ee-481e99df6aff" />
+        <ownedAttributesInternal>
+          <property Id="28964deb-8d6a-41de-8f31-9a9b564c9e29" name="evt. note" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1cbe15b2-0bf6-481b-ae07-2ef8d0c56fbe" />
+          </property>
+          <property Id="23dae734-3b4b-4c69-b2d4-6bf34eaff4a1" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4979b231-27be-4bc0-9598-d514b7071e3c" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="17b6a9cc-d888-4d3d-a7cc-a6d62cba104a" name="Greenkeeper" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3b22f498-42b5-45bd-9443-2882a6804bff" />
+        <targetEnds>
+          <association Id="9d95ba82-2f49-4c09-840e-913c8d0f912d" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0b44c082-1ea9-4f8e-9210-df66fb200478" LastKnownName="Område" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="10467a7a-6b59-4d5d-9b9a-871b4ade73ab" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="c8dca119-c44b-4023-b15a-7db20cbd9170" name="Lower" value="1">
+                      <elementDefinition Id="dc8e6da0-a6ef-4f53-b016-193d379f79a0" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="2a28e2cc-9ef2-42f6-bc90-72215622de13" name="Upper" value=".*">
+                      <elementDefinition Id="904259b9-bb21-41e8-8497-c113a96ee888" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="522d3f4c-65af-4dc4-bb50-36647a4b4c67" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1d4bd673-7ae0-46fe-87ef-40d10c005716" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="eeade970-fd49-4a36-98f4-59ba0b4a6699" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a407246f-7693-46d5-9a2a-b2d2da9f9708" />
+          </association>
+          <association Id="4377ad61-1a86-47d6-9e92-abfb60c07b70" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e8257b2e-84a1-46a2-b5f5-da6483c889ed" LastKnownName="Under område" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="de5e2127-e880-47a2-a272-ded1351b80cd" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5e82778a-fe82-4d7f-b327-aa5d82b157f0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1c4b030f-663c-4f97-a72c-fc78d02b964d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4ef37483-b751-4531-878c-d94dcb8ab7a2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d3dd7365-a645-4b6c-8bbd-81ca0ab2134a" />
+          </association>
+          <association Id="d009d691-4c9b-4265-a2b5-7ca0b7d22f8a" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5b0f38be-b179-41c2-a135-dc20d44bf837" LastKnownName="Opgave" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="35e88eff-b374-4442-975f-02282d435cfe" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d755abad-daa2-4262-a229-4929c742ee4f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8813eb4f-361b-4d07-b551-87bfe646b5a9" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8d144c33-e617-4654-a41e-be3e8a5cbb5d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2109d247-999e-49e7-900f-6b94445e7749" />
+          </association>
+          <association Id="dddc74e6-2f90-47a8-818e-2317b0ce1490" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5e390450-a98e-4797-9bf7-51e3611d6b04" LastKnownName="Udførte opgaver" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a90112f8-3b1d-4951-97b9-356cbf4f6c35" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ea40d218-9c5e-4876-8680-888efa5036f0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="58f0f02f-5c6c-45d7-973a-f12725da9b49" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="00e83949-a97a-4c80-bf72-2e663669b97e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cdbddfd8-6330-4b26-b704-2ab78d1a180c" />
+          </association>
+          <association Id="a2584855-90c7-4b18-b56a-d1692b8bcc48" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ece3afa3-e8ef-49cc-a710-b297968813ff" LastKnownName="Tidsforbrug" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0ba326aa-2378-4898-92e5-3296a7d6e052" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8a8b9597-0fbf-4d2f-a8fe-f1badfb7a895" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5458d4a7-166d-4d16-b8d1-e78847ae47e5" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f60275c6-4084-44ce-b262-227302884ae1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="eb3eb660-caa6-42c9-9865-5d00f10c3abf" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="770d3183-e674-48c5-bfb3-b4dca355be2a" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0eca4d66-96e5-48c5-9f68-1c4f03c53756" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ece3afa3-e8ef-49cc-a710-b297968813ff" name="Tidsforbrug" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0fb885b5-cc7f-42b9-be51-898f6a39343d" />
+        <ownedAttributesInternal>
+          <property Id="d8d26fb7-e68f-480f-a093-84d0968d63ed" name="Dato" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6f4d9465-c40b-4c02-a22c-b0e3cf382c8c" />
+          </property>
+          <property Id="4a280aee-c415-40d4-be00-e5feca44cb44" name="Tid" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4aec3e02-3f31-417e-8820-c687c63ff0a8" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0b44c082-1ea9-4f8e-9210-df66fb200478" name="Område" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4185ceb7-e254-4691-86be-72dccb96d65b" />
+        <ownedAttributesInternal>
+          <property Id="dc80b637-e704-4ab6-a406-6a05d88bacae" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3a132f35-ed2b-4303-b903-e166ed7e379b" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e8257b2e-84a1-46a2-b5f5-da6483c889ed" name="Under område" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9b0d33c5-ca26-46d5-98f6-b99bcdf19432" />
+        <ownedAttributesInternal>
+          <property Id="e5a2ae6d-1179-4876-a2da-e60b8261e97c" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="28118f1f-a2c5-425e-8b77-2edfc2462828" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5e390450-a98e-4797-9bf7-51e3611d6b04" name="Udførte opgaver" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="07c30acc-2504-4e23-89ab-27e2860d3aca" />
+        <ownedAttributesInternal>
+          <property Id="4618071d-8f7f-464e-b118-0978032dbfcc" name="id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a71e07ea-014f-4ac2-b746-3fe4538e70db" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="caf31700-0b22-49f2-842f-e7d43ac24e1f" name="Admin" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b49525bb-d166-4fbc-8669-2b4eec4f0b50" />
+        <targetEnds>
+          <association Id="f58ba488-e4a8-45ef-b0a8-b521177db423" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5e390450-a98e-4797-9bf7-51e3611d6b04" LastKnownName="Udførte opgaver" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="096b54da-8559-4d4c-887a-38fab6af4fe3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="5275f1c5-a210-4c13-bffd-3cb04c79daf3" name="Lower" value="1">
+                      <elementDefinition Id="c47963b3-ff45-408f-98c2-e4519342d99e" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="18310fc0-2e54-4b56-9762-7a48d22da79a" name="Upper" value=".*">
+                      <elementDefinition Id="d6df76f8-c090-4818-b7e6-1645e7f82a32" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="57d797a7-2a56-46df-b7fb-ab43239b97c5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="da28cb73-416f-4b9b-ab66-07ffde823c88" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e91da805-fad5-4a7e-98ff-c39b52dcbfa0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3b072ec6-4b7a-45d8-a394-ac577b2a01bf" />
+          </association>
+          <association Id="30a9cb1d-31e7-455b-9aad-fbd77bf46eb6" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="17b6a9cc-d888-4d3d-a7cc-a6d62cba104a" LastKnownName="Greenkeeper" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="27d5d353-44ad-440d-8dd1-1a4572bc4494" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="82537527-65e6-4239-93fd-ab6fdc4873fc" name="Lower" value="1">
+                      <elementDefinition Id="ef99665a-8d74-4373-a382-00867ba8a1e2" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="57dc4045-fe97-47e4-a8d2-d2bc498d1852" name="Upper" value=".*">
+                      <elementDefinition Id="14dd4bd3-b545-451c-bf28-bd30f97002ba" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="0b78739f-f7e4-4dcf-bb78-b79b39b46cdf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="90bdcec6-2d2e-407d-acde-afe123e424cf" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="eb6b1286-b075-48a4-970b-9d05b34d4509" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="26eab298-de3d-48d6-8471-f4b5bd6bc990" />
+          </association>
+          <association Id="8ba286cb-585c-4cf3-8349-597d169e4cc8" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ece3afa3-e8ef-49cc-a710-b297968813ff" LastKnownName="Tidsforbrug" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e844816b-cbe3-4dd2-b340-94d91e7aa538" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b0e88041-5f4e-453a-9ba3-e51926b1009d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3e85d119-c33b-4762-926f-bdad413b6929" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="674f0adb-40f4-41c2-9f38-e6e2746588a8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6b9837ed-acdd-4754-8962-b8ba2572504f" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="74d84662-7bba-4128-b83f-9234818c4d01" name="id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7be33f82-604d-4a66-a406-9d47670f6c47" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="de5d190e-ea7e-4152-8b3a-2946587293a9" name="KeptItDomainModel">
+    <elementDefinition Id="6dffcb30-a11a-438e-ac1f-4f9c88ed7a65" />
+    <profileInstances>
+      <packageHasProfileInstances Id="0e238bd8-811b-4c93-8bc9-d3d5db75d61d">
+        <profileInstance Id="aa5aa11c-1fa8-41e8-b9c8-26723cceccc0" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2c5b5fd1-8abc-46fe-bca5-013dcfd5be02">
+        <profileInstance Id="08218f59-6d15-4ed7-bee9-e09ab822f481" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
